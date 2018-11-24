@@ -17,14 +17,20 @@ test("it returns true if it's a plain object", () => {
 });
 
 test("it returns false if it's a class instance", () => {
-  class Person {}
-
   expect(isPlainObj(new Date())).toBe(false);
+  expect(isPlainObj(new Error())).toBe(false);
+  expect(isPlainObj(new Function())).toBe(false);
+  expect(isPlainObj(new Boolean(true))).toBe(false);
   expect(isPlainObj(new String())).toBe(false); // eslint-disable-line no-new-wrappers
-  expect(isPlainObj(new Person())).toBe(false);
+  expect(isPlainObj(new RegExp("\\s"))).toBe(false);
+  expect(isPlainObj(new Promise((resolve, reject) => {}))).toBe(false);
+
   expect(isPlainObj(new Set([1]))).toBe(false);
   expect(isPlainObj(new Map())).toBe(false);
   expect(isPlainObj(new WeakMap())).toBe(false);
+
+  class Person {};
+  expect(isPlainObj(new Person())).toBe(false);
 });
 
 test("it returns false if it's not an object type", () => {
@@ -39,6 +45,8 @@ test("it returns false if it's not an object type", () => {
   expect(isPlainObj("")).toBe(false);
   expect(isPlainObj(" ")).toBe(false);
   expect(isPlainObj("foo")).toBe(false);
+  expect(isPlainObj(Infinity)).toBe(false);
+  expect(isPlainObj(NaN)).toBe(false);
 });
 
 test("it returns false if it's an array", () => {
@@ -50,4 +58,6 @@ test("it returns false if it's an array", () => {
 test("it returns false if it's a function", () => {
   expect(isPlainObj(() => "bar")).toBe(false);
   expect(isPlainObj(() => ({ foo: "bar" }))).toBe(false);
+  expect(isPlainObj(parseInt)).toBe(false);
+  expect(isPlainObj(isNaN)).toBe(false);
 });
