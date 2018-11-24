@@ -1,7 +1,7 @@
 {
   "name": "@risan/is-plain-obj",
   "description": "Tiny function to check if a value is a plain JavaScript object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "https://github.com/risan/is-plain-obj#readme",
   "author": {
