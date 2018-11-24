@@ -59,5 +59,5 @@ test("it returns false if it's a function", () => {
   expect(isPlainObj(() => "bar")).toBe(false);
   expect(isPlainObj(() => ({ foo: "bar" }))).toBe(false);
   expect(isPlainObj(parseInt)).toBe(false);
-  expect(isPlainObj(isNaN)).toBe(false); // eslint-disable-line no-restricted-globals
+  expect(isPlainObj(Number.isNaN)).toBe(false);
 });
