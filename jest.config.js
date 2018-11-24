@@ -1,6 +1,6 @@
 module.exports = {
   testEnvironment: "node",
   verbose: true
-  // collectCoverage: true,
-  // collectCoverageFrom: ["src/*.js"]
+  collectCoverage: true,
+  collectCoverageFrom: ["src/*.js"]
 };
