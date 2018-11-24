@@ -54,16 +54,18 @@ isPlainObj(new Map());
 isPlainObj(new WeakMap());
 
 class Person {}
-
 isPlainObj(new Person()); // FALSE
+
+const myFunction = () => "foo";
+isPlainObj(myFunction); // FALSE
 ```
 
 If you load the library directly on the browser, it's available under the `isPlainObj` name.
 
 ```js
-window.isPlainObj({ foo: "bar" }); // true
+window.isPlainObj({ foo: "bar" }); // TRUE
 
-window.isPlainObj(new Date()); // false
+window.isPlainObj(new Date()); // FALSE
 ```
 
 ## License
