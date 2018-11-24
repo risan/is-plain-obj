@@ -31,7 +31,7 @@ export default [
   {
     input: "src/index.js",
     output: {
-      name: pkg.name,
+      name: "isPlainObj",
       file: pkg.browser,
       format: "umd"
     },
@@ -45,7 +45,7 @@ export default [
   {
     input: "src/index.js",
     output: {
-      name: pkg.name,
+      name: "isPlainObj",
       file: pkg.browser.replace(/\.js$/i, ".min.js"),
       format: "umd"
     },

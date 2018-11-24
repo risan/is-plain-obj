@@ -1,9 +1,9 @@
 {
-  "name": "isplainobj",
+  "name": "@risan/is-plain-obj",
   "description": "Tiny function to check if a value is a plain JavaScript object",
   "version": "1.0.0",
   "license": "MIT",
-  "homepage": "https://github.com/risan/isplainobj#readme",
+  "homepage": "https://github.com/risan/is-plain-obj#readme",
   "author": {
     "name": "Risan Bagja Pradana",
     "email": "risanbagja@gmail.com",
@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/risan/isplainobj.git"
+    "url": "git+https://github.com/risan/is-plain-obj.git"
   },
   "bugs": {
-    "url": "https://github.com/risan/isplainobj/issues"
+    "url": "https://github.com/risan/is-plain-obj/issues"
   },
   "keywords": [
     "object",
     "object-literal",
     "plain-object"
   ],
-  "main": "dist/isplainobj.cjs.js",
-  "browser": "dist/isplainobj.umd.js",
+  "main": "dist/is-plain-obj.cjs.js",
+  "browser": "dist/is-plain-obj.umd.js",
   "engines": {
     "node": ">=8.0.0"
   },
