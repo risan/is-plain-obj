@@ -1,0 +1,52 @@
+{
+  "name": "isplainobj",
+  "description": "Tiny function to check if a value is a plain JavaScript object",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/risan/isplainobj#readme",
+  "author": {
+    "name": "Risan Bagja Pradana",
+    "email": "risanbagja@gmail.com",
+    "url": "https://bagja.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risan/isplainobj.git"
+  },
+  "bugs": {
+    "url": "https://github.com/risan/isplainobj/issues"
+  },
+  "keywords": [
+    "object",
+    "object-literal",
+    "plain-object"
+  ],
+  "main": "dist/isplainobj.cjs.js",
+  "browser": "dist/isplainobj.umd.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "NODE_ENV=build rollup -c",
+    "lint": "eslint ./",
+    "lint-fix": "eslint ./ --fix",
+    "test": "NODE_ENV=test jest",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.2",
+    "rollup": "^0.67.3",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-terser": "^3.0.0"
+  }
+}
