@@ -13,10 +13,10 @@ Tiny function to check if a value is a plain JavaScript object.
 ## Installation
 
 ```bash
-$ npm install isplainobj
+$ npm install @risan/is-plain-obj
 
 # Or if you use Yarn
-$ yarn add isplainobj
+$ yarn add @risan/is-plain-obj
 ```
 
 Use this library directly on the browser:
