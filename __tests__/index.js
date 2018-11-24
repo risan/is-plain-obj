@@ -19,17 +19,17 @@ test("it returns true if it's a plain object", () => {
 test("it returns false if it's a class instance", () => {
   expect(isPlainObj(new Date())).toBe(false);
   expect(isPlainObj(new Error())).toBe(false);
-  expect(isPlainObj(new Function())).toBe(false);
-  expect(isPlainObj(new Boolean(true))).toBe(false);
+  expect(isPlainObj(new Function())).toBe(false); // eslint-disable-line no-new-func
+  expect(isPlainObj(new Boolean(true))).toBe(false); // eslint-disable-line no-new-wrappers
   expect(isPlainObj(new String())).toBe(false); // eslint-disable-line no-new-wrappers
   expect(isPlainObj(new RegExp("\\s"))).toBe(false);
-  expect(isPlainObj(new Promise((resolve, reject) => {}))).toBe(false);
+  expect(isPlainObj(new Promise(() => {}))).toBe(false);
 
   expect(isPlainObj(new Set([1]))).toBe(false);
   expect(isPlainObj(new Map())).toBe(false);
   expect(isPlainObj(new WeakMap())).toBe(false);
 
-  class Person {};
+  class Person {}
   expect(isPlainObj(new Person())).toBe(false);
 });
 
@@ -59,5 +59,5 @@ test("it returns false if it's a function", () => {
   expect(isPlainObj(() => "bar")).toBe(false);
   expect(isPlainObj(() => ({ foo: "bar" }))).toBe(false);
   expect(isPlainObj(parseInt)).toBe(false);
-  expect(isPlainObj(isNaN)).toBe(false);
+  expect(isPlainObj(isNaN)).toBe(false); // eslint-disable-line no-restricted-globals
 });
