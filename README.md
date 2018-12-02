@@ -10,7 +10,7 @@
 
 Tiny function to check if a value is a plain JavaScript object.
 
-## Installation
+## Install
 
 ```bash
 $ npm install @risan/is-plain-obj
