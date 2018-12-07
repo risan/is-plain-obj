@@ -1,7 +1,7 @@
 {
   "name": "@risan/is-plain-obj",
-  "version": "1.0.5",
-  "description": "Tiny function to check if a value is a plain JavaScript object",
+  "version": "1.0.6",
+  "description": "Check if a value is a plain JavaScript object.",
   "keywords": [
     "object",
     "object-literal",

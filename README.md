@@ -1,31 +1,26 @@
 # Is Plain Object
 
-[![Build Status](https://flat.badgen.net/travis/risan/is-plain-obj)](https://travis-ci.org/risan/is-plain-obj)
-[![Test Coverage](https://flat.badgen.net/codeclimate/coverage/risan/is-plain-obj)](https://codeclimate.com/github/risan/is-plain-obj)
-[![Maintainability](https://flat.badgen.net/codeclimate/maintainability/risan/is-plain-obj)](https://codeclimate.com/github/risan/is-plain-obj)
-[![Latest Stable Version](https://flat.badgen.net/npm/v/@risan/is-plain-obj)](https://www.npmjs.com/package/@risan/is-plain-obj)
-[![Node Version](https://flat.badgen.net/npm/node/@risan/is-plain-obj)](https://www.npmjs.com/package/@risan/is-plain-obj)
-[![Code Style: Prettier](https://flat.badgen.net/badge/code%20style/prettier/ff69b4)](https://github.com/prettier/prettier)
-[![License](https://flat.badgen.net/npm/license/@risan/is-plain-obj)](https://github.com/risan/is-plain-obj/blob/master/LICENSE)
+[![Build Status](https://badgen.net/travis/risan/is-plain-obj)](https://travis-ci.org/risan/is-plain-obj)
+[![Test Covarage](https://badgen.net/codecov/c/github/risan/is-plain-obj)](https://codecov.io/gh/risan/is-plain-obj)
+[![Greenkeeper](https://badges.greenkeeper.io/risan/is-plain-obj.svg)](https://greenkeeper.io)
+[![Latest Version](https://badgen.net/npm/v/@risan/is-plain-obj)](https://www.npmjs.com/package/@risan/is-plain-obj)
 
-Tiny function to check if a value is a plain JavaScript object.
+Check if a value is a plain JavaScript object
 
-## Install
+## Installation
 
 ```bash
 $ npm install @risan/is-plain-obj
-
-# Or if you use Yarn
-$ yarn add @risan/is-plain-obj
 ```
 
-Use this library directly on the browser:
+### CDN
+
+The library is available over a CDN:
 
 ```html
-<!-- For development -->
 <script src="https://unpkg.com/@risan/is-plain-obj@latest/dist/is-plain-obj.umd.js"></script>
 
-<!-- Minified version for production -->
+<!-- Or the minified version -->
 <script src="https://unpkg.com/@risan/is-plain-obj@latest/dist/is-plain-obj.umd.min.js"></script>
 ```
 
@@ -73,4 +68,4 @@ window.isPlainObj(new Date()); // FALSE
 
 ## License
 
-MIT © [Risan Bagja Pradana](https://bagja.net)
+[MIT](https://github.com/risan/is-plain-obj/blob/master/LICENSE) © [Risan Bagja Pradana](https://bagja.net)
