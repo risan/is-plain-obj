@@ -2,7 +2,6 @@
 
 [![Build Status](https://badgen.net/travis/risan/is-plain-obj)](https://travis-ci.org/risan/is-plain-obj)
 [![Test Covarage](https://badgen.net/codecov/c/github/risan/is-plain-obj)](https://codecov.io/gh/risan/is-plain-obj)
-[![Greenkeeper](https://badges.greenkeeper.io/risan/is-plain-obj.svg)](https://greenkeeper.io)
 [![Latest Version](https://badgen.net/npm/v/@risan/is-plain-obj)](https://www.npmjs.com/package/@risan/is-plain-obj)
 
 Check if a value is a plain JavaScript object
